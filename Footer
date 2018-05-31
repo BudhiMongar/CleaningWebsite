@@ -1,0 +1,91 @@
+<div class="footer">
+    <div class="container-fluid padding">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>Contact us</h4>
+                <hr class="light">
+                <p>0430 056 485</p>
+                <p>info@qldcleaners.com.au</p>
+                <p>Queensland Cleaners</p>
+                <p>Brisbane, Gold Coast</p>
+
+            </div>
+            <div class="col-md-4";>
+                <hr class="light">
+                <h4>Our Hours</h4>
+                <hr class="light">
+                <p>Monday to Friday: 7 a.m - 7 p.m</p>
+                <p>Saturday: 8 a.m - 6 p.m </p>
+                <p>Sunday: 9 a.m - 5 p.m</p>
+            </div>
+            <div class="col-md-4">
+                <hr class="light">
+                <h4>Service Area</h4>
+                <hr class="light">
+                <p>Inner Brisbane</p>
+                <p>Northern Suburbs</p>
+                <p>Sothern Suburbs</p>
+                <p>Gold Cost</p>
+            </div>
+            <!--- Connect -->
+                <div class="col-12" style="float:right">
+                    <div class="social padding">
+                        <a href="https://www.facebook.com/shiny.cleaners.1?fref=search/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.gmail.com"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="https://www.instagram.com/bissosh_gurung/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/watch?v=1gHwMppb1ds"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            <div class="col-12">
+                <hr class="light">
+                <h5>&copy;QLDcleaners</h5>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+     style="z-index:9999;">
+    <div class="modal-dialog">
+
+        <div class="loginmodal-container">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Login to Your Account</h1><br>
+                </div>
+                <div class="modal-body">
+                    <form autocomplete="off" method="post"
+                          action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+                        <input autocomplete="off" type="text" name="user" placeholder="Username">
+                        <input autocomplete="off" type="password" name="pass" placeholder="Password">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                        <input type="button" id="cancel" class="login loginmodal-submit" data-dismiss="modal"
+                               value="Cancel">
+                    </form>
+                    <?php
+                    if (isset($error)) {
+                        echo "<p style=\"color: red;\">$error</p>";
+                        unset($error);
+                    }
+                    ?>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
+<!-- <script>
+    $document.ready(function(){
+            return true;
+
+    });
+    </script> -->
